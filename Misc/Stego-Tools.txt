@@ -1,0 +1,5 @@
+Stegoveritas
+exiftool
+strings
+stegsolve
+binwalk
